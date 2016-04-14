@@ -74,7 +74,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand" href="index.html">
+				  <a class="navbar-brand" href="/index.html">
 					<img src="http://balogrim12.cafe24.com/img/logo.png" alt="logo">
 				  </a>
 				</div>

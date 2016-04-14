@@ -9,20 +9,14 @@
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<mvc:annotation-driven />
-
 	<mvc:default-servlet-handler />
 
 	<mvc:view-resolvers>
 		<mvc:jsp prefix="/WEB-INF/view/" />
+		<!--  About URL Mapping -->
 	</mvc:view-resolvers>
 	
-	 <mvc:resources mapping="/resources/**" location="/resources/"  
-	cache-period="31556926"/>
-	<mvc:resources location="/css/**" mapping="/css/**"/>
-	<mvc:resources location="/img/**" mapping="/img/**"/>
-	<mvc:resources location="/js/**" mapping="/js/**"/>
-	<mvc:resources location="/less/**" mapping="/less/**"/>
-	<mvc:resources location="/plugin/**" mapping="/plugin/**"/>
+
 
 	<bean id="messageSource"
 		class="org.springframework.context.support.ResourceBundleMessageSource">

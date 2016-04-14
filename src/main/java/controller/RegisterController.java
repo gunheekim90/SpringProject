@@ -44,17 +44,17 @@ public class RegisterController {
 	@RequestMapping(value = "/register/step3", method = RequestMethod.POST)
 	public String handleStep3(RegisterRequest regReq, Errors errors, Boolean agree) {
 		if (!agree) {
-			return "register/step2";
+			return "/register/step2";
 		}
 		new RegisterRequestValidator().validate(regReq, errors);
 		if (errors.hasErrors())
-			return "register/step2";
+			return "/register/step2";
 		try {
 			memberRegisterService.regist(regReq);
-			return "register/step3";
+			return "/register/step3";
 		} catch (AlreadyExistingMemberException ex) {
 			errors.rejectValue("email", "duplicate");
-			return "register/step2";
+			return "/register/step2";
 		}
 	}
 }

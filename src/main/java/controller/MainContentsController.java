@@ -33,7 +33,7 @@ public class MainContentsController {
 	@RequestMapping(method = RequestMethod.POST)
 	public String PHome() {
 		
-		return "contents/contetns01";
+		return "/contents/contetns01";
 	}
 	@RequestMapping(method = RequestMethod.GET)
 	public String GHome(Model model) {
@@ -41,27 +41,27 @@ public class MainContentsController {
 		//List<Item> item = itemDao.selectAll();
 		//String user = item.get(0).getItemUser();
 		//model.addAttribute("list",item);
-		return "contents/contents01";
+		return "/contents/contents01";
 	}
 	
 	@RequestMapping("/mypage/Account/{id}")
 	public String detail(@PathVariable("id") Long memId, Model model) {
 		Member member = memberDao.selectById(memId);
 		model.addAttribute("member", member);
-		return "mypage/Account";
+		return "/mypage/Account";
 	}
 	
 	@RequestMapping( value = "/contents/index", method = RequestMethod.GET )
 	public String index() {
 		
-		return "contents/index";
+		return "/contents/index";
 	}
 	
 	@RequestMapping("/upload")
 	public String upload(Model model) {
 
 		model.addAttribute("itemRegisterRequest",new ItemRegisterRequest());
-		return "upload/upload_content";
+		return "/upload/upload_content";
 	}
 
 

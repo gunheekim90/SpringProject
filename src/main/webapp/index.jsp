@@ -111,7 +111,7 @@
 					 <c:if test="${empty authInfo.id}"> 
 					       <!-- user did not login, show this login tag  -->
 					       <!-- else show Logout tag -->
-  						  <a onclick="window.location.href='/sp4-chap13/login'">Login</a>
+  						  <a onclick="window.location.href='/login'">Login</a>
 					 </c:if>
 					 <c:if test="${!empty authInfo.id}">
 					 <a href="<c:url value="/mypage/Account/${authInfo.id}"/>"> ${authInfo.name}님, 환영합니다  <i class="fa fa-shopping-basket"></i></a>
@@ -593,7 +593,7 @@
 													</div>
 													<div id="success"></div>
 													<div class="padd-t-10">
-													<button type="submit" onclick="window.location.href='/sp4-chap13/register/step2'" class="btn btn-success btn-block btn-lg">REGISTER NOW!</button>
+													<button type="submit" onclick="window.location.href='/register/step2'" class="btn btn-success btn-block btn-lg">REGISTER NOW!</button>
 													</div>
 												</form>
 												<div class="clearfix"></div>

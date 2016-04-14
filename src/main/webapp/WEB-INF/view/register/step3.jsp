@@ -70,7 +70,7 @@
 						<li><a href="#" class="icon-holder youtube large circle"><i class="fa fa-youtube-play"></i></a></li>
 					</ul>
 					<br>
-					<a href="/sp4-chap13/index.jsp" class="btn btn-custom btn-lg  wow fadeInUp" data-wow-delay="2.5s"> back to homepage</a>
+					<a href="/index.jsp" class="btn btn-custom btn-lg  wow fadeInUp" data-wow-delay="2.5s"> back to homepage</a>
 
 
 				</div><!-- ./row -->	

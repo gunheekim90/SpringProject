@@ -82,7 +82,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand" href="index.jsp">
+				  <a class="navbar-brand" href="/index.jsp">
 					<img src="http://balogrim12.cafe24.com/img/logo.png" alt="logo">
 				  </a>
 				</div>
@@ -102,7 +102,7 @@
 					 <c:if test="${empty authInfo.id}"> 
 					       <!-- user did not login, show this login tag  -->
 					       <!-- else show Logout tag -->
-  						  <a onclick="window.location.href='/sp4-chap13/login'">Login</a>
+  						  <a onclick="window.location.href='/login'">Login</a>
 					 </c:if>
 					 <c:if test="${!empty authInfo.id}">
 					<a href="<c:url value="/mypage/Account/${authInfo.id}"/>"> ${authInfo.name}님, 환영합니다  <i class="fa fa-shopping-basket"></i></a>

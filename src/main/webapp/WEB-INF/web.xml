@@ -27,8 +27,9 @@
 
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/sp4-chap13/</url-pattern>
 	</servlet-mapping>
+	
 
 	<filter>
 		<filter-name>encodingFilter</filter-name>
@@ -42,7 +43,7 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/sp4-chap13/*</url-pattern>
 	</filter-mapping>
 
 </web-app>
